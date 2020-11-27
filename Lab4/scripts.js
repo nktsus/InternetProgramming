@@ -39,3 +39,7 @@ function ListOnChange(){
 function MoveToButton(){
 	Button1.value = TextBox1.value
 };
+function FocusButton(){
+ 	Task5TextBox1.focus();
+ 	Task5TextBox1.select();
+};
