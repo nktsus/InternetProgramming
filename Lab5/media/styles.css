@@ -16,17 +16,19 @@
         height: 100vh;
         display: grid;
         grid-template-areas:
-          'menu'
-          '.'
           'content'
           '.'
           'footer'
           ;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5px 1fr 5px 35px;
+        grid-template-rows: 1fr 5px 35px;
       }
       .logo {
-        grid-area: logo;
+        display: inline-block;
+        vertical-align: top;
+        height: 65px;
+        margin-top: 4px;
+      } 
         
       }
       .logoimage{
@@ -113,10 +115,10 @@
           display: grid;
           grid-template-areas:
 
-            'menu menu . content content'
+            'content content content content content'
             '. . . . .'
             'footer footer footer footer footer';
-          grid-template-columns: 1fr 1fr 1px 5fr 5fr;
+          grid-template-columns: 5fr;
           
           grid-template-rows: 1fr 0px 20px;        }
       }
