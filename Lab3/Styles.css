@@ -1,0 +1,107 @@
+* {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #F8F0FA;
+      }
+      .grid-container {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          'logo'
+          '.'
+          'header'
+          '.'
+          'menu'
+          '.'
+          'ads'
+          '.'
+          'content'
+          '.'
+          'news'
+          '.'
+          'footer'
+          '.'
+          'authors'
+          ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 5px 80px 5px 1fr 5px 1fr 5px 1fr;
+      }
+      .logo {
+        grid-area: logo;
+        
+      }
+      .logoimage{
+      	max-height: 70px;
+      	max-width: 130px;
+      }
+      .advimage{
+      	max-height: 110px;
+      	max-width: 130px;
+      }
+      .header {
+        grid-area: header;
+        
+      }
+      .menu {
+        grid-area: menu;
+        background-color: #F7E8FB;
+      }
+      .ads {
+        grid-area: ads;
+      }
+      .news {
+        grid-area: news;
+        background-color: #ccc;
+      }
+      .content {
+        grid-area: content;
+        background-color: #eee;
+      }
+      .footer {
+        grid-area: footer;
+        text-align: center;
+
+      }
+      .authors {
+        grid-area: authors;
+        
+      }
+      h3 {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      .adsp {
+      	margin-top:0;
+      	margin-bottom: 0;
+      }
+      p {
+      	margin: 0;
+      	text-align: center;
+      }
+      .font {
+        color: #993399; 
+        font-size: 12pt;
+        
+      }
+      @media screen and (min-width: 468px) {
+        .grid-container {
+          height: 100vh;
+          display: grid;
+          grid-template-areas:
+            'logo . header header header'
+            '. . . . .'
+            'menu menu menu menu menu'
+            '. . . . .'
+            'ads . content . news'
+            '. . . . .'
+            'footer footer footer . authors';
+          grid-template-columns: 130px 5px 1fr 5px 400px;
+          grid-template-rows: 70px 5px 45px 5px 1fr 5px 35px;
+        }
+      }

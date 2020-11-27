@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+   	<script src="scripts.js"></script>
+    <title>Nikita Suslov | Task 1. Personal form.</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="grid-container">
+		<div class="menu"><p><a style="background-color: #bbbfca" href="index.html"><img class="logoimage" src="logo.png"></a>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="page3.html">Task 2. Radio buttons.</a></p>
+			<p><a href="page4.html">Task 3. Checkbox and select.</a></p>
+			<p><a href="page5.html">Task 4. Text to button.</a></p>
+			<p><a href="page6.html">Task 5. Focus and select.</a></p>
+		</div>
+		<div class="content">
+			<form>
+ 				<fieldset class="infotable">
+ 					<legend>Perosnal information</legend>
+ 					<br>
+ 					<span>Last Name </span>
+ 					<input id="LastName" title="Input your last name. (For quick access to this field use Alt+7 keys)" accesskey="7" rows=5 cols=10 tabindex=1>
+ 					<br>
+ 					<br>
+ 					<span>First Name </span>
+ 					<input id="FirstName" title="Input your first name. (For quick access to this field use Alt+8 keys)" accesskey="8" rows=5 cols=10 tabindex=1>
+ 					<br>
+ 					<br>
+ 					<span>Middle Name (if exist) </span>
+ 					<input id="MiddleName" title="Input your middle name. (For quick access to this field use Alt+9 keys)" accesskey="9" rows=5 cols=10 tabindex=1>
+ 					<br>
+ 					<br>
+ 				</fieldset>
+ 				<br>
+ 				<br>
+ 				<fieldset class="infotable">
+ 					<legend>The payroll proccess</legend>
+ 					<br>
+ 					<span>Accrued value </span><input id="acc" >
+ 					<br>
+ 					<br>
+ 					<span>Retained value </span><input id="ret" >
+ 					<br>
+ 					<br>
+ 					<span>Total value </span><input id="totalvalue" >
+ 					<br>
+ 					<br>
+ 					<br>
+ 					<input type="button" value="Count" id="calculator" onclick="calcular()">
+ 					<br>
+ 					<br>
+ 				</fieldset>
+ 			</form>
+ 		</div>
+		<div class="footer"> &copy This is my page! Don't try to steel it!</div>
+	</div>
+</body>
+</html>

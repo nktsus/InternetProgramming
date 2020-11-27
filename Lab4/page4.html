@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Nikita Suslov | Task 3. Checkbox and select.</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="menu"><p><a style="background-color: #bbbfca" href="index.html"><img class="logoimage" src="logo.png"></a>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="page2.html">Task 1. Personal form.</a></p>
+			<p><a href="page3.html">Task 2. Radio buttons.</a></p>
+			<p><a href="page5.html">Task 4. Text to button.</a></p>
+			<p><a href="page6.html">Task 5. Focus and select.</a></p></div>
+		<div class="content">
+			<form>
+ 				<fieldset class="infotable">
+ 					<legend>Activate checkbox and select from list</legend>
+ 					<br>
+ 					<label>
+ 						<input type="checkbox" name="CheckboxActivate" value="1" id="ChkActv" onclick="ActivateCheckbox()">Activate me! 
+ 					</label>
+ 					<br>
+ 					<br>
+ 						<select size id="ActiveList" disabled="" onchange="ListOnChange()">
+ 						 	<option disabled>Choose something:</option>
+ 						 	<option value="Option 1">Option 1</option>
+ 						 	<option value="Option 2">Option 2</option>
+ 						 	<option value="Option 3">Option 3</option>
+ 						 	<option value="Option 4">Option 4</option>
+						</select>
+ 					<br>
+ 					<br>
+ 				</fieldset>
+ 			</form>
+ 		</div>
+		<div class="footer"> &copy This is my page! Don't try to steel it!</div>
+	</div>
+</body>
+</html>
