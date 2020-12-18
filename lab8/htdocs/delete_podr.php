@@ -13,7 +13,7 @@
 	while ($row=$result->fetch_assoc()){
 		echo "<tr>";
 		echo"<td>".$row['nazv_podr']."</td>";
-		echo"<td><a href='delete_podr.php?kod_podr=".$row['kod_podr']."'>Удалить</a></td>";
+		echo"<td><a href='delete_podr_get.php?kod_podr=".$row['kod_podr']."'>Удалить</a></td>";
 		echo "</tr>";
 	}	
 	
