@@ -1,0 +1,32 @@
+.logo{
+	max-height: 300px;
+	max-width: 300px;
+}
+.green{
+	color: green;
+	font-size: 34px;
+}
+.navright{
+	float: right;
+	background: grey;
+	width: 200px;
+	height: 1080px;
+}
+.greenmark{
+	text-decoration: overline;
+	color: green;
+	font-size: 24px;
+	
+}
+.underline{
+	text-decoration: underline;
+}
+tr, td {
+	padding: 10px;
+	text-align: center;
+	color: red;
+}
+.tbl {
+	border-color: yellow pink blue green;
+	border-style: groove; 
+}
