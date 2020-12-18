@@ -34,13 +34,15 @@
 				if (mb_stristr($tovar['nazv_t'], $_POST['searchString'], false, 'UTF-8'))
 					foreach ($tovar as $key=>$value)
 					echo"<td>".$value; 
+					echo "</tr>";
 			break;
 
 			case 2:
 			if ($_POST['searchString']==$tovar['price'])
 			{
 				foreach ($tovar as $key=>$value)
-					echo"<td>".$value; 
+					echo"<td>".$value;
+					echo "</tr>"; 
 			}
 			break;
 
@@ -49,6 +51,7 @@
 			{
 				foreach ($tovar as $key=>$value)
 					echo"<td>".$value; 
+					echo "</tr>";
 			}
 			break;
 
@@ -56,6 +59,5 @@
 	}
 	echo "</tr>";
 	} 
-
-	require_once("footer.php");
+	
 ?>
